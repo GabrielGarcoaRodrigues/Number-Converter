@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Converter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+  <body>
+    <h1 class="title1">Roman numeral converter</h1>
+    <!--CHOOSE WHICH YOU WILL CONVERT TO-->
+    <div id="choice" class="card-box">
+      <h2>CONVERT TO:</h2>
+      <a id="arabicos" class="bot-choice" href="#">Arabic</a>
+      <a id="romanos" class="bot-choice" href="#">Romans</a>
+    </div>
+    <!--CHOOSE WHICH YOU WILL CONVERT TO-->
+
+    <!--CONVERT TO ROMAN-->
+    <div id="romano" class="card-box">
+      <h2>CONVERT TO ROMAN NUMBERS</h2>
+      <form>
+        <div class="row">
+          <div class="user-box">
+            <input type="number" id="decimal1" name="" required="" />
+            <label for="decimal" class="active">Arabic number:</label>
+          </div>
+
+          <div class="user-box">
+            <input type="text" name="" required="" class="roman" id="roman1" />
+            <label for="roman" class="active">Roman number:</label>
+          </div>
+        </div>
+        <a id="back1" class="voltar" href="#">Back</a>
+      </form>
+    </div>
+    <!--CONVERT TO ROMAN-->
+
+    <!--CONVERT TO ARABIC-->
+    <div id="arabico" class="card-box">
+      <h2>CONVERT TO ARABIC NUMBERS</h2>
+      <form>
+        <div class="row">
+          <div class="user-box">
+            <input
+              type="text"
+              id="roman2"
+              name=""
+              required=""
+              style="text-transform: uppercase"
+            />
+            <label for="roman" class="active">Roman number:</label>
+          </div>
+
+          <div class="user-box">
+            <input
+              type="text"
+              name=""
+              required=""
+              class="decimal"
+              id="decimal2"
+            />
+            <label for="decimal" class="active">Arabic number:</label>
+          </div>
+        </div>
+        <a id="back2" class="voltar" href="#">Back</a>
+      </form>
+    </div>
+  </body>
+</html>
